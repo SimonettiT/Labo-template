@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+body h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+body h3,
+body .title-p {
+  font-weight: 700;
+}
+
+body p {
+  font-size: 20px;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("img/laboratory-tech-research.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+header nav {
+  background-color: rgba(72, 72, 72, 0.3);
+  border-bottom: 1px solid #ffffff;
+}
+
+header nav img {
+  height: 60px;
+  margin: 10px;
+  margin-left: 20px;
+}
+
+header nav ul {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 20px;
+}
+
+header .welcome {
+  padding: 20vh;
+  width: 100%;
+}
+
+header .welcome h1 {
+  color: #ffffff;
+  font-size: 60px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 60px;
+  display: block;
+}
+
+header .welcome .begin {
+  font-size: 40px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  width: 300px;
+}
+
+main .company-message {
+  padding: 80px;
+  width: 80%;
+  margin: auto;
+}
+
+main .company-message h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main .tech-section {
+  background-image: url("img/laboratory-tech.jpg");
+  height: 700px;
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+}
+
+main .tech-section h2,
+main .tech-section h3,
+main .tech-section button {
+  color: #ffffff;
+  margin: 20px;
+  margin-left: 5%;
+}
+
+main .tech-section h3 {
+  padding-top: 150px;
+}
+
+main .tech-section h2 {
+  width: 40%;
+}
+
+main .tech-section button {
+  background-color: #116EBF;
+  color: #ffffff;
+  font-weight: 700;
+  border: 0;
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 40px;
+}
+/*# sourceMappingURL=style.css.map */
