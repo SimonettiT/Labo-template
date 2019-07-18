@@ -20,6 +20,11 @@ body .title-p {
   font-weight: 700;
 }
 
+body h4 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
 body p {
   font-size: 20px;
 }
@@ -29,7 +34,7 @@ header {
   height: 100vh;
   background-image: url("img/laboratory-tech-research.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: cover;
   background-size: 100%;
 }
 
@@ -114,7 +119,8 @@ main .tech-section {
   background-image: url("img/laboratory-tech.jpg");
   height: 700px;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
 }
 
@@ -142,5 +148,89 @@ main .tech-section button {
   padding: 20px;
   font-size: 20px;
   margin-top: 40px;
+}
+
+main .opinions {
+  padding: 60px;
+  width: 100%;
+}
+
+main .opinions h2 {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main .opinions .clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 90%;
+  margin: auto;
+}
+
+main .opinions .clients .client {
+  text-align: center;
+  width: 30%;
+}
+
+main .opinions .clients .client h4 {
+  margin: 10px;
+}
+
+main .opinions .clients .client p {
+  margin-bottom: 7px;
+}
+
+main .opinions .clients .client img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+}
+
+main .projects {
+  background-color: #02718B;
+  color: #ffffff;
+  padding: 80px;
+}
+
+main .projects h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+main .projects .projects-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+main .projects .projects-flex ul {
+  margin: auto 10%;
+}
+
+main .projects .projects-flex ul li {
+  list-style: none;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
