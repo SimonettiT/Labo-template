@@ -29,6 +29,10 @@ body p {
   font-size: 20px;
 }
 
+body button {
+  cursor: pointer;
+}
+
 header {
   width: 100%;
   height: 100vh;
@@ -75,6 +79,12 @@ header nav ul li a {
   text-decoration: none;
   margin: 20px;
   font-size: 20px;
+  -webkit-transition: border-bottom 0.1s ease-in-out;
+  transition: border-bottom 0.1s ease-in-out;
+}
+
+header nav ul li a:hover {
+  border-bottom: 1px solid #ffffff;
 }
 
 header .welcome {
@@ -102,6 +112,13 @@ header .welcome .begin {
   display: block;
   margin: auto;
   width: 300px;
+  -webkit-transition: color 0.3s, background-color 0.3s ease-in-out;
+  transition: color 0.3s, background-color 0.3s ease-in-out;
+}
+
+header .welcome .begin:hover {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 main .company-message {
@@ -126,7 +143,7 @@ main .tech-section {
 
 main .tech-section h2,
 main .tech-section h3,
-main .tech-section button {
+main .tech-section a {
   color: #ffffff;
   margin: 20px;
   margin-left: 5%;
@@ -138,9 +155,10 @@ main .tech-section h3 {
 
 main .tech-section h2 {
   width: 40%;
+  margin-bottom: 60px;
 }
 
-main .tech-section button {
+main .tech-section a {
   background-color: #116EBF;
   color: #ffffff;
   font-weight: 700;
@@ -148,6 +166,14 @@ main .tech-section button {
   padding: 20px;
   font-size: 20px;
   margin-top: 40px;
+  text-decoration: none;
+  -webkit-transition: color 0.3s, background-color 0.3s ease-in-out;
+  transition: color 0.3s, background-color 0.3s ease-in-out;
+}
+
+main .tech-section a:hover {
+  color: #116EBF;
+  background-color: #ffffff;
 }
 
 main .opinions {
@@ -232,5 +258,147 @@ main .projects .projects-flex ul li {
   font-size: 20px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+main .news {
+  padding: 60px 0;
+  margin: auto;
+  text-align: center;
+}
+
+main .news .news-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+main .news .news-grid .news-card {
+  width: 25%;
+  background-color: #EFEFEF;
+  margin: 40px;
+  height: 400px;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+main .news .news-grid .news-card .news-content {
+  height: 100%;
+}
+
+main .news .news-grid .news-card .news-content p {
+  text-align: right;
+}
+
+main .news .news-grid .news-card .news-content .date {
+  opacity: 0.6;
+  margin-bottom: 5px;
+}
+
+main .news .news-grid .news-card .news-content h4 {
+  font-size: 35px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+main .news .news-grid .news-card .read-more {
+  position: absolute;
+  text-decoration: none;
+  color: #3449BF;
+  font-weight: 700;
+  bottom: 0px;
+  height: 10%;
+  left: 20px;
+  opacity: 0.9;
+  -webkit-transition: -webkit-text-decoration 0.2s ease-in-out;
+  transition: -webkit-text-decoration 0.2s ease-in-out;
+  transition: text-decoration 0.2s ease-in-out;
+  transition: text-decoration 0.2s ease-in-out, -webkit-text-decoration 0.2s ease-in-out;
+}
+
+main .news .news-grid .news-card .read-more:hover {
+  text-decoration: underline;
+}
+
+main .news .news-grid .news-card .read-more i {
+  margin-left: 5px;
+}
+
+main .contact {
+  background-color: #A0C003;
+  padding: 60px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .contact h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+main .contact .contact-content {
+  width: 50%;
+}
+
+main .contact .contact-content .places {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 50px;
+}
+
+main .contact .contact-content .places .place {
+  width: 50%;
+}
+
+main .contact .contact-content .places .place h3 {
+  font-size: 25px;
+}
+
+main .contact .contact-content .places .place p {
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #4E4E4E;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 15px 0 20px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer a i {
+  margin: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */

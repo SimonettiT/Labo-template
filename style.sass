@@ -16,6 +16,8 @@ body
         font-weight: 400
     p
         font-size: 20px
+    button
+        cursor: pointer
 header
     width: 100%
     height: 100vh
@@ -44,6 +46,9 @@ header
                     text-decoration: none
                     margin: 20px
                     font-size: 20px
+                    transition: border-bottom 0.1s ease-in-out
+                    &:hover
+                        border-bottom: 1px solid #ffffff
     .welcome
         padding: 20vh
         width: 100%
@@ -66,6 +71,10 @@ header
             display: block
             margin: auto
             width: 300px
+            transition: color 0.3s, background-color 0.3s ease-in-out
+        .begin:hover
+            color: #000000
+            background-color: #ffffff
 main
     .company-message
         padding: 80px
@@ -83,7 +92,7 @@ main
         width: 100%
         h2,
         h3,
-        button
+        a
             color: #ffffff
             margin: 20px
             margin-left: 5%
@@ -91,7 +100,8 @@ main
             padding-top: 150px
         h2
             width: 40%
-        button
+            margin-bottom: 60px
+        a
             background-color: #116EBF
             color: #ffffff
             font-weight: 700
@@ -99,6 +109,11 @@ main
             padding: 20px
             font-size: 20px
             margin-top: 40px
+            text-decoration: none
+            transition: color 0.3s, background-color 0.3s ease-in-out
+            &:hover
+                color: #116EBF
+                background-color: #ffffff 
     .opinions
         padding: 60px
         width: 100%
@@ -145,4 +160,81 @@ main
                     font-size: 20px
                     text-align: center
                     margin-bottom: 20px
-        
+    .news
+        padding: 60px 0
+        margin: auto
+        text-align: center
+        .news-grid
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: center
+            align-content: space-around
+            width: 80%
+            margin: auto
+            .news-card
+                width: 25%
+                background-color: #EFEFEF
+                margin: 40px
+                height: 400px
+                padding: 15px
+                border-radius: 10px
+                position: relative
+                .news-content
+                    height: 100%
+                    p
+                        text-align: right
+                    .date
+                        opacity: 0.6
+                        margin-bottom: 5px
+                    h4
+                        font-size: 35px
+                        text-align: left
+                        margin-top: 20px
+                .read-more
+                    position: absolute
+                    text-decoration: none
+                    color: #3449BF
+                    font-weight: 700
+                    bottom: 0px
+                    height: 10%
+                    left: 20px
+                    opacity: 0.9
+                    transition: text-decoration 0.2s ease-in-out
+                    &:hover
+                        text-decoration: underline
+                    i
+                        margin-left: 5px
+    .contact
+        background-color: #A0C003
+        padding: 60px
+        color: #ffffff
+        display: flex
+        flex-direction: row
+        h2
+            font-size: 50px
+            margin-bottom: 10px
+        .contact-content
+            width: 50%
+            .places
+                display: flex
+                flex-direction: row
+                margin-top: 50px
+                .place
+                    width: 50%
+                    h3
+                        font-size: 25px
+                    p
+                        margin: 10px 0
+footer
+    background-color: #4E4E4E
+    color: #ffffff
+    text-align: center
+    padding: 20px
+    p
+        margin: 15px 0 20px 0
+    a
+        text-decoration: none
+        color: #ffffff
+        i
+            margin: 0 10px
