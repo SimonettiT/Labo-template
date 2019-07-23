@@ -8,6 +8,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
+  width: 100%;
 }
 
 body h2 {
@@ -89,7 +90,7 @@ header nav ul li a:hover {
 }
 
 header .welcome {
-  padding: 20vh;
+  padding: 20vh 10%;
   width: 100%;
 }
 
@@ -401,5 +402,100 @@ footer a {
 
 footer a i {
   margin: 0 10px;
+}
+
+@media screen and (max-width: 1216px) {
+  main .news .news-grid {
+    width: 95%;
+  }
+  main .news .news-grid news-card {
+    width: 40%;
+    margin: 30px 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav a {
+    margin: 10 auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  header nav ul {
+    float: none;
+  }
+  main .tech-section h2 {
+    width: 70%;
+  }
+  main .opinions {
+    padding: 60px 0;
+  }
+  main .opinions .clients {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  main .opinions .clients .client {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  main .projects {
+    padding: 80px 0;
+  }
+  main .projects .projects-flex ul {
+    margin: auto 10px;
+    width: 50%;
+  }
+  main .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .contact .contact-content,
+  main .contact .map {
+    margin: none;
+    width: 100%;
+  }
+  main .contact .contact-content .contact-title {
+    text-align: center;
+  }
+  main .contact .contact-content .places {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  header .welcome {
+    padding: 60px 0;
+  }
+  main .company-message {
+    padding: 80px 0;
+  }
+  main .news .news-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .news .news-grid .news-card {
+    width: 70%;
+    height: 350px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
